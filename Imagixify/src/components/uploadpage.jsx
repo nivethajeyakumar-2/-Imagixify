@@ -277,7 +277,7 @@ export default function UploadPage() {
           fontSize: "0.9rem",
         }}
       >
-        © iLovePDF 2025 • Your PDF Editor
+        © Imagixify 2025 • Your Image Editor
       </Box>
     </Box>
   );

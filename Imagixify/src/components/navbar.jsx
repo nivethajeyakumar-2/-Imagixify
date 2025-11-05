@@ -11,25 +11,23 @@ export const Navbar = () => {
         {/* Logo / Brand */}
         <Typography
           variant="h5"
-          sx={{ fontWeight: "bold", color: "#e63946", cursor: "pointer" }}
+          sx={{ fontWeight: "bold", color: "#1177bbff", cursor: "pointer" }}
           onClick={() => navigate("/")}
         >
-          I ❤️ PDF
+         Imagixify
         </Typography>
 
         {/* Navigation Links */}
         <Box>
-          <Button color="inherit" onClick={() => navigate("/merge-pdf")}>Merge PDF</Button>
-          <Button color="inherit" onClick={() => navigate("/split-pdf")}>Split PDF</Button>
-          <Button color="inherit" onClick={() => navigate("/image_compress")}>Compress PDF</Button>
-          <Button color="inherit">Convert PDF</Button>
-          <Button color="inherit">All Tools</Button>
+          <Button color="inherit" onClick={() => navigate("/pdf")}>Image to PDF</Button>
+          <Button color="inherit" onClick={() => navigate("/image_compress")}>Image Compress</Button>
+          <Button color="inherit" onClick={() => navigate("/watermark")}>Watermark</Button>
         </Box>
 
         {/* Auth Buttons */}
         <Box>
           <Button variant="text" color="inherit">Login</Button>
-          <Button variant="contained" color="error" sx={{ ml: 1 }}>
+          <Button variant="contained"  sx={{ ml: 1 ,}}>
             Sign up
           </Button>
         </Box>
