@@ -161,10 +161,10 @@ const tools = [
     path: "/image_compress",
   },
   {
-    title: "Watermark",
-    desc: "Add custom text, logos, or shapes to your images to protect and brand them.",
+    title: "Edit Image",
+    desc: "Brighten , Blur and Grey Scale your images to your wish.",
     color: "#7950f2",
-    path: "/watermark",
+    path: "/edit-image",
   },
 ];
 
@@ -172,7 +172,7 @@ export default function HomePage() {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ minHeight: "100vh", bgcolor: "#fafafa" , width:"1230px" }}>
+    <Box sx={{ minHeight: "100vh", bgcolor: "#fafafa" , width:"1530px" }}>
       {/* Navbar */}
       <Navbar />
 
@@ -182,11 +182,11 @@ export default function HomePage() {
         All the image tools you need in one place
         </Typography>
         <Typography variant="subtitle1" sx={{ color: "text.secondary", mb: 4, }}>
-         Edit, compress, convert, watermark, and optimize your images quickly and easily. 
+         Edit, compress, convert, Edit Image, and optimize your images quickly and easily. 
         </Typography>
 
         <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 1 }}>
-          {["All", "Image to PDF", "Image Compress", "Watermark", ].map(
+          {["All", "Image to PDF", "Image Compress", " Edit Image", ].map(
             (item, i) => (
               <Chip
                 key={i}

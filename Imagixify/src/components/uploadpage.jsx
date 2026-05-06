@@ -131,7 +131,7 @@ export default function UploadPage() {
   };
 
   return (
-    <Box sx={{ bgcolor: "#f5f6fa", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+    <Box sx={{ bgcolor: "#f5f6fa", minHeight: "100vh", display: "flex", flexDirection: "column" , width:"1530px" }}>
       {/*  Navbar */}
       <Navbar />
 

@@ -231,7 +231,7 @@ export default function ImageToPDF() {
   };
 
   return (
-    <Box sx={{ bgcolor: "#fefeffff", minHeight: "100vh" }}>
+    <Box sx={{ bgcolor: "#fefeffff", minHeight: "100vh" , width:"1520px" }}>
       {/* Header */}
       <Navbar/>
 

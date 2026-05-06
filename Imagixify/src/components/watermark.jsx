@@ -78,7 +78,7 @@
 
 // components/ImageFilters.jsx
 import React, { useState } from "react";
-import { Box, Slider, Typography, Button, Card, CardMedia } from "@mui/material";
+import { Box, Slider, Typography, Button, Card, CardMedia, Grid } from "@mui/material";
 import { Navbar } from "./navbar";
 
 export default function ImageFilters() {
@@ -96,27 +96,67 @@ export default function ImageFilters() {
   };
 
   return (
-    <Box sx={{ bgcolor: "#f5f6fa", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+    <Box sx={{ bgcolor: "#f5f6fa", minHeight: "100vh", display: "flex", flexDirection: "column" ,  width:"1530px" }}>
         <Navbar/>
       {/* <Typography variant="h6"> Image Filters</Typography> */}
-      <Button variant="contained" component="label" sx={{ my: 2 }}>
-        Upload Image
-        <input type="file" hidden onChange={handleFile} />
-      </Button>
+      <Box sx={{ display: "flex", justifyContent: "center", mt: 10 }}>
+  <Button variant="contained" component="label" sx={{width:"160px" }} >
+    Upload Image
+    <input type="file" hidden onChange={handleFile} />
+  </Button>
+</Box>
       {file && (
-        <Card>
-          <CardMedia component="img" height="300" image={file} sx={style} />
+        <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
+        <Card sx={{mt: 3}}>
+          <CardMedia component="img" height="300"  width="300"image={file} sx={style} />
         </Card>
+        </Box>
       )}
       {file && (
-        <Box mt={2}>
-          <Typography>Brightness</Typography>
-          <Slider sx={{ width:"50px" }} value={filter.brightness} min={50} max={150} onChange={(e, v) => setFilter({ ...filter, brightness: v })} />
-          <Typography>Grayscale</Typography>
-          <Slider  sx={{ width:"50px" }}  value={filter.grayscale} min={0} max={100} onChange={(e, v) => setFilter({ ...filter, grayscale: v })} />
-          <Typography>Blur</Typography>
-          <Slider  sx={{ width:"50px" }}  value={filter.blur} min={0} max={10} onChange={(e, v) => setFilter({ ...filter, blur: v })} />
-        </Box>
+    <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
+  <Grid container spacing={4} alignItems="center">
+    
+    <Grid item>
+      <Typography>Brightness</Typography>
+      <Slider
+        sx={{ width: "100px" }}
+        value={filter.brightness}
+        min={50}
+        max={150}
+        onChange={(e, v) =>
+          setFilter({ ...filter, brightness: v })
+        }
+      />
+    </Grid>
+
+    <Grid item>
+      <Typography>Grayscale</Typography>
+      <Slider
+        sx={{ width: "100px" }}
+        value={filter.grayscale}
+        min={0}
+        max={100}
+        onChange={(e, v) =>
+          setFilter({ ...filter, grayscale: v })
+        }
+      />
+    </Grid>
+
+    <Grid item>
+      <Typography>Blur</Typography>
+      <Slider
+        sx={{ width: "100px" }}
+        value={filter.blur}
+        min={0}
+        max={10}
+        onChange={(e, v) =>
+          setFilter({ ...filter, blur: v })
+        }
+      />
+    </Grid>
+
+  </Grid>
+</Box>
       )}
     </Box>
   );

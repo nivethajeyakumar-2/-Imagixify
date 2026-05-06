@@ -105,7 +105,7 @@ export default function CompressedPage() {
   };
 
   return (
-    <Box sx={{ bgcolor: "#f8f9fa", minHeight: "100vh" }}>
+    <Box sx={{ bgcolor: "#f8f9fa", minHeight: "100vh" ,  width:"1530px" }}>
       <Navbar />
 
       <Grid container spacing={3} sx={{ px: 4, py: 5 }}>

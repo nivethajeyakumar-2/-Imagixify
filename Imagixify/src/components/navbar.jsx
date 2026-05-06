@@ -21,7 +21,7 @@ export const Navbar = () => {
         <Box>
           <Button color="inherit" onClick={() => navigate("/pdf")}>Image to PDF</Button>
           <Button color="inherit" onClick={() => navigate("/image_compress")}>Image Compress</Button>
-          <Button color="inherit" onClick={() => navigate("/watermark")}>Watermark</Button>
+          <Button color="inherit" onClick={() => navigate("/edit-image")}>Edit Image</Button>
         </Box>
 
         {/* Auth Buttons */}

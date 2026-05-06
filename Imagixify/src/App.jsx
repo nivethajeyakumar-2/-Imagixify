@@ -15,7 +15,7 @@ export default function App() {
         <Route path="/compressed" element={<CompressedPage />} />
         <Route path="/pdf" element={<ImageToPDF/>}/>
         <Route path="/image_compress" element={<UploadPage/>}/>
-        <Route path="/watermark" element={<ImageWatermark/>}/>
+        <Route path="/edit-image" element={<ImageWatermark/>}/>
       </Routes>
     </Router>
   );
