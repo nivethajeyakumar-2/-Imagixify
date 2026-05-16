@@ -1,6 +1,6 @@
 # -Imagixify
 A beginner-friendly image utility app to compress images, convert them to PDF, and optimize files built with passion and learning.
-🪄 Imagixify
+🪄
 Imagixify is my personal project as a fresher developer.
 It’s an all-in-one image utility tool that helps you compress images, convert them into PDFs, and manage your files easily — all in one place.
 
